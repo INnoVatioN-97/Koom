@@ -10,5 +10,13 @@ html(lang="en")
         header 
             h1 Koom
         main
-            h3 Welcome to Koom!
+            form#nick
+                ul
+                input(type="text", placeholder="Choose a nickname." required)
+                button Save
+
+            form#message
+                ul
+                input(type="text", placeholder="Write a new Message." required)
+                button Send
         script(src="/public/js/app.js")
